@@ -9,7 +9,7 @@
 //--------------------------------------------------------
 //! @brief ログ出力処理の更新
 //--------------------------------------------------------
-void LogSystem::Update(entt::registry& registry) {
+void LogSystem::Update(entt::registry& registry, float deltaTime) {
 	// Positionを持つEntity を取得
 	const auto view = registry.view<Position>();
 

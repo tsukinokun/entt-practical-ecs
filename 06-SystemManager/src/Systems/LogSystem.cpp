@@ -8,7 +8,6 @@
 #include <iostream>
 //--------------------------------------------------------
 //! @brief ログ出力処理の更新
-//! @param registry [in,out] EnTT のレジストリ
 //--------------------------------------------------------
 void LogSystem::Update(entt::registry& registry) {
 	// Positionを持つEntity を取得

@@ -8,7 +8,6 @@
 #include <Components/Velocity.hpp>
 //--------------------------------------------------------
 //! @brief 移動処理の更新
-//! @param registry [in,out] EnTT のレジストリ
 //--------------------------------------------------------
 void MovementSystem::Update(entt::registry& registry) {
 	// PositionとVelocityを持つEntity を取得

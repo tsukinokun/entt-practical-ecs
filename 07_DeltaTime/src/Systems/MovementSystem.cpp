@@ -9,13 +9,13 @@
 //--------------------------------------------------------
 //! @brief 移動処理の更新
 //--------------------------------------------------------
-void MovementSystem::Update(entt::registry& registry) {
+void MovementSystem::Update(entt::registry& registry, float deltaTime) {
 	// PositionとVelocityを持つEntity を取得
 	const auto view = registry.view<Position, Velocity>();
 
 	// 各Entityの位置を速度分だけ更新
-	view.each([](auto entity, Position& pos, const Velocity& vel) {
-		pos.x += vel.x;
-		pos.y += vel.y;
+	view.each([deltaTime](auto entity, Position& pos, const Velocity& vel) {
+		pos.x += vel.x * deltaTime;
+		pos.y += vel.y * deltaTime;
 		});
 }
