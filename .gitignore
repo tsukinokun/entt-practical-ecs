@@ -39,3 +39,30 @@
 
 # debug information files
 *.dwo
+
+# Visual Studio cache
+.vs/
+
+# Build directories
+x64/
+x86/
+Debug/
+Release/
+
+# Common build folders for multi-project solutions
+bin/
+obj/
+
+# C++ intermediate files
+*.pdb
+*.obj
+*.ilk
+*.log
+*.tlog
+*.tmp
+
+# Executables / libraries
+*.exe
+*.dll
+*.lib
+*.exp
